@@ -9,9 +9,6 @@ Since we are using RDS, patching or any other maintainence activity is taken car
 
 Here is the reference architecture that We are going to Spin up using Terraform(Infra Provisioning) And Ansible(Configuration Management).
 
-![AWS](https://github.com/ignatka89/terraform-ansible-lamp/blob/main/architecture.jpg?raw=true "AWSLamp")
-
-
 <h1>Pre-requisites to Run the script<h1>
 
 
