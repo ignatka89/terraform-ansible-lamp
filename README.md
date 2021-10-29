@@ -21,7 +21,7 @@ Here is the reference architecture that We are going to Spin up using Terraform(
    
    `required_version = "~> 0.13"` !!! BUT latests version not working check again after changes 28.10.2021
 
-4. Create a key pair in the region you want to deploy (Default here is ap-south-1, but you can change in terraform.tfvars)
+4. Create a key pair in the region you want to deploy (Default here is eu-central-1, but you can change in terraform.tfvars)
 
 <h1> Steps to run the Scripts<h1>
 
@@ -37,16 +37,16 @@ Here is the reference architecture that We are going to Spin up using Terraform(
 
 ```
 #The Region you want to deploy the infra
-aws_region         = "ap-south-1"
+aws_region         = "eu-central-1"
 
 # Replace the VPC cidr from your account. Range of CIDR max(22)
-vpc_cidr           = "172.168.96.0/22"
+vpc_cidr           = "172.170.100.0/22"
 
 # Key pair name create in same region
-key_name           = "lamp"
+key_name           = "ubuntu"
 
 # personal laptop public ip for debugging and SSH purpose (you can put here 127.0.0.1 if you have NAT it's not wokring)
-personal_laptop_ip = "182.70.99.206"
+personal_laptop_ip = "37.214.72.246"
 ```
 
 4. Initialiaze the terraform so that all related plugins gets download
@@ -64,8 +64,8 @@ or directly auto approve it
 6. After completion the ALB URL and DB DNS will be there in the outputs section similar to this
 
 ```
-alburl = "lamp-alb-******.ap-south-1.elb.amazonaws.com"
-dburl = "lampdb.******.ap-south-1.rds.amazonaws.com"
+alburl = "lamp-alb-******.eu-central-1.elb.amazonaws.com"
+dburl = "lampdb.******.eu-central-1.rds.amazonaws.com"
 ```
 
 7. On hittng the ALB you should be able to see index.html for apache web servers.
@@ -85,7 +85,7 @@ This is just a sample and only the apache sever is running here.
 And when you access the instances you can do the following command to check access to MySql 
 Database in RDS using the terraform output dburl.
 
-`nc lampdb.******.ap-south-1.rds.amazonaws.com 3306 -v`
+`nc lampdb.******.eu-central-1.rds.amazonaws.com 3306 -v`
 
 And hence we can start building the LAMP application as required.
 

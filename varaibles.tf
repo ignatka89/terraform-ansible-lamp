@@ -1,6 +1,6 @@
 variable "aws_region" {
   type    = string
-  default = "ap-south-1"
+  default = "eu-central-1"
 }
 
 variable "vpc_cidr" {

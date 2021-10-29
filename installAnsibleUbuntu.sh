@@ -15,6 +15,6 @@ else
     echo "Ansible already installed"
 fi
 
-git clone https://github.com/ignatka89/ansible_lamp.git.git
+git clone https://github.com/ignatka89/ansible_lamp.git
 
 cd ansible_lamp && ansible-playbook components.yaml
