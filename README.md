@@ -9,7 +9,7 @@ Since we are using RDS, patching or any other maintainence activity is taken car
 
 Here is the reference architecture that We are going to Spin up using Terraform(Infra Provisioning) And Ansible(Configuration Management).
 
-![AWS](https://github.com/Dash2701/terraform-ansible-lamp/blob/main/architecture.jpg?raw=true "AWSLamp")
+![AWS](https://github.com/ignatka89/terraform-ansible-lamp/blob/main/architecture.jpg?raw=true "AWSLamp")
 
 
 <h1>Pre-requisites to Run the script<h1>
@@ -27,7 +27,7 @@ Here is the reference architecture that We are going to Spin up using Terraform(
 
 1. Clone the repository 
 
-` git clone https://github.com/Dash2701/terraform-ansible-lamp.git`
+` git clone https://github.com/ignatka89/terraform-ansible-lamp.git`
 
 2. Go to the repository
 
