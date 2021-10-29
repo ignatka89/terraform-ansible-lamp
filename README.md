@@ -1,9 +1,7 @@
 <h3>Terraform Ansible LAMP with RDS<h3>
 ---
 ---
-
-
-We are trying to create a High Available LAMP architecture here using AWS cloud. 
+ 
 Here we will be using RDS as our MySql DB and Ubuntu 20.4 as our web servers. 
 Since we are using RDS, patching or any other maintainence activity is taken care by AWS. Hence we don't need NAT gateway or instance. Anyway they cost a lot too.  But RDS with Multi AZ also has a high price, but you get high availability of the site.
 
