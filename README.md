@@ -1,16 +1,11 @@
 <h3>Terraform Ansible LAMP with RDS<h3>
 ---
 ---
-
-
-We are trying to create a High Available LAMP architecture here using AWS cloud. 
+ 
 Here we will be using RDS as our MySql DB and Ubuntu 20.4 as our web servers. 
 Since we are using RDS, patching or any other maintainence activity is taken care by AWS. Hence we don't need NAT gateway or instance. Anyway they cost a lot too.  But RDS with Multi AZ also has a high price, but you get high availability of the site.
 
 Here is the reference architecture that We are going to Spin up using Terraform(Infra Provisioning) And Ansible(Configuration Management).
-
-![AWS](https://github.com/Dash2701/terraform-ansible-lamp/blob/main/architecture.jpg?raw=true "AWSLamp")
-
 
 <h1>Pre-requisites to Run the script<h1>
 
@@ -27,7 +22,7 @@ Here is the reference architecture that We are going to Spin up using Terraform(
 
 1. Clone the repository 
 
-` git clone https://github.com/Dash2701/terraform-ansible-lamp.git`
+` git clone https://github.com/ignatka89/terraform-ansible-lamp.git`
 
 2. Go to the repository
 
