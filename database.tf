@@ -21,6 +21,3 @@ resource "aws_db_instance" "database" {
 }
 
 
-output "dburl" {
-  value = aws_db_instance.database.address
-}

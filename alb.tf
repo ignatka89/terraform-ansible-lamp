@@ -48,10 +48,6 @@ resource "aws_alb_listener" "listener_http" {
 resource "aws_lb_target_group_attachment" "ipattachment" {
   count            = var.az_count
   target_group_arn = aws_alb_target_group.lamptg.arn
-  target_id        = aws_instance.lampsetup[count.index].id
+  target_id        = module.ec2_instance[count.index].id
   port             = 80
-}
-
-output "alburl" {
-  value = aws_lb.lampalb.dns_name
 }
