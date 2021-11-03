@@ -1,4 +1,4 @@
-<h3>Terraform Ansible LAMP with RDS<h3>
+## Terraform Ansible LAMP with RDS
 ---
 ---
  
@@ -7,7 +7,7 @@ Since we are using RDS, patching or any other maintainence activity is taken car
 
 Here is the reference architecture that We are going to Spin up using Terraform(Infra Provisioning) And Ansible(Configuration Management).
 
-<h1>Pre-requisites to Run the script<h1>
+## Pre-requisites to Run the script
 
 
 1. AWS Account 
@@ -18,7 +18,7 @@ Here is the reference architecture that We are going to Spin up using Terraform(
 
 4. Create a key pair in the region you want to deploy (Default here is eu-central-1, but you can change in terraform.tfvars)
 
-<h1> Steps to run the Scripts<h1>
+## Steps to run the Scripts
 
 1. Clone the repository 
 
@@ -66,7 +66,7 @@ dburl = "lampdb.******.eu-central-1.rds.amazonaws.com"
 7. On hittng the ALB you should be able to see index.html for apache web servers.
 
 
-<h1>Ansible Part<h1>
+## Ansible Part
 
 We are using the EC2 user data to install Ansible and do the installation of the LAMP required packages.
 The user data that we are passing to the instance is the filename:
@@ -84,12 +84,12 @@ Database in RDS using the terraform output dburl.
 
 And hence we can start building the LAMP application as required.
 
-<h1> for Module "terraform-aws-modules/ec2-instance/aws" <h1>
+## for Module "terraform-aws-modules/ec2-instance/aws"
 
 delete in main.tf (.terraform/modules/ec2_instance/mail.tf) 134:   volume_tags = var.enable_volume_tags ? merge({ "Name" = var.name }, var.volume_tags) : null
 
 to avoid an Error: Conflicting configuration arguments
 
 
-<h1>Thank you<h1>
+## Thank you
 
