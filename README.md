@@ -84,5 +84,12 @@ Database in RDS using the terraform output dburl.
 
 And hence we can start building the LAMP application as required.
 
+<h1> for Module "terraform-aws-modules/ec2-instance/aws" <h1>
+
+delete in main.tf (.terraform/modules/ec2_instance/mail.tf) 134:   volume_tags = var.enable_volume_tags ? merge({ "Name" = var.name }, var.volume_tags) : null
+
+to avoid an Error: Conflicting configuration arguments
+
+
 <h1>Thank you<h1>
 

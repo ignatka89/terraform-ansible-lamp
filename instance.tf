@@ -46,4 +46,6 @@ module "ec2_instance" {
   tags = merge({
     "Name" = "Lamp-${count.index}-${terraform.workspace}"
   }, var.default_tags)
+
+  
 }
